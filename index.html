@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Living World - Class 11 Biology | skill100.ai</title>
+  <meta name="description" content="Master Chapter 1 NCERT Class 11 Biology: The Living World. Interactive connectomics, 5W1H introduction, terminology lexicon, core skills practice, and NEET exam edge.">
+  
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       1. Global Header & Navigation
+       ========================================================================= -->
+  <header class="global-header">
+    <div class="header-container">
+      <a href="#dashboard" class="brand-logo" id="brand-logo">
+        <img src="logo.svg" alt="skill100.ai" class="brand-logo-img">
+      </a>
+      <nav class="header-nav">
+        <a href="#dashboard">Home</a>
+        <a href="#skills">Skill Discovery</a>
+        <a href="#connectomics">IDY 2026</a>
+        <a href="#connectomics">WYSD 2026</a>
+        <a href="#skills">WYSD Maths</a>
+        <a href="#exam-edge">NEET</a>
+        <a href="#exam-edge">Rapid Math</a>
+        <button class="logout-btn" id="logout-btn">Logout</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       2. Sub-Page Top Tab Navigation Bar (Visible on sub-pages)
+       ========================================================================= -->
+  <div class="subpage-nav-bar" id="subpage-nav-bar" style="display: none;">
+    <div class="subpage-nav-container">
+      <a href="#dashboard" class="back-dashboard-btn" id="btn-back-dashboard">
+        <span>←</span> Back to Dashboard
+      </a>
+      <div class="tab-pills-group" id="subpage-tabs">
+        <button class="tab-pill" data-target="connectomics">
+          <span>🧠</span> Connectomics
+        </button>
+        <button class="tab-pill" data-target="introduction">
+          <span>🌟</span> Intro
+        </button>
+        <button class="tab-pill" data-target="terminology">
+          <span>📖</span> Terminology
+        </button>
+        <button class="tab-pill" data-target="skills">
+          <span>🎯</span> Skills
+        </button>
+        <button class="tab-pill" data-target="exam-edge">
+          <span>⚡</span> Exam Edge
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       Main Content Container
+       ========================================================================= -->
+  <main class="main-wrapper">
+
+    <!-- =======================================================================
+         VIEW 1: Dashboard / Landing Page (/the-living-world)
+         ======================================================================= -->
+    <section id="view-dashboard" class="view-section active">
+      <div class="dashboard-grid">
+        
+        <!-- Left Hero Panel -->
+        <div class="hero-panel">
+          <div>
+            <a href="#dashboard" class="hero-pill-link">
+              <span>←</span> Grade 11 Biology
+            </a>
+            <div class="hero-title-group">
+              <h1 class="title-main">Master</h1>
+              <span class="title-gradient">The Living World</span>
+            </div>
+            <p class="hero-subtext">
+              Discover what makes life unique — from the basic characteristics of living organisms to the science of naming and classifying them.
+            </p>
+          </div>
+
+          <div class="hero-stat-grid">
+            <div class="stat-tile">
+              <div class="stat-value">4</div>
+              <div class="stat-label">Core Topics</div>
+            </div>
+            <div class="stat-tile">
+              <div class="stat-value" id="dashboard-problems-count">5</div>
+              <div class="stat-label">Practice Problems</div>
+            </div>
+            <div class="stat-tile">
+              <div class="stat-value">6</div>
+              <div class="stat-label">Chapter Links</div>
+            </div>
+            <div class="stat-tile">
+              <div class="stat-value" id="dashboard-mastery-score">0%</div>
+              <div class="stat-label">Mastery</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Choose Your Path Panel -->
+        <div class="path-panel">
+          <div class="path-section-header">CHOOSE YOUR PATH</div>
+          <div class="path-cards-list">
+            
+            <!-- Card 1: Connectomics -->
+            <a href="#connectomics" class="path-card path-connectomics" id="path-card-connectomics">
+              <div class="path-icon-container">🔗</div>
+              <div class="path-card-body">
+                <div class="path-badge">BIG PICTURE</div>
+                <div class="path-title">Connectomics</div>
+                <div class="path-desc">See how The Living World connects to other branches of biology and real-world applications.</div>
+              </div>
+            </a>
+
+            <!-- Card 2: Introduction -->
+            <a href="#introduction" class="path-card path-intro" id="path-card-intro">
+              <div class="path-icon-container">🌟</div>
+              <div class="path-card-body">
+                <div class="path-badge">START HERE</div>
+                <div class="path-title">Introduction</div>
+                <div class="path-desc">Explore the 6 big questions (5W1H) and prerequisites to begin your journey into The Living World.</div>
+              </div>
+            </a>
+
+            <!-- Card 3: Terminology -->
+            <a href="#terminology" class="path-card path-terminology" id="path-card-terminology">
+              <div class="path-icon-container">📖</div>
+              <div class="path-card-body">
+                <div class="path-badge">THE LANGUAGE</div>
+                <div class="path-title">Terminology</div>
+                <div class="path-desc">Master the key terms and concepts that define taxonomy and classification.</div>
+              </div>
+            </a>
+
+            <!-- Card 4: Skills -->
+            <a href="#skills" class="path-card path-skills" id="path-card-skills">
+              <div class="path-icon-container">🎯</div>
+              <div class="path-card-body">
+                <div class="path-badge">CORE PRACTICE</div>
+                <div class="path-title">Skills</div>
+                <div class="path-desc">Dive into individual skills with interactive Learn, Practice, and Assess modules.</div>
+              </div>
+            </a>
+
+            <!-- Card 5: Exam Edge -->
+            <a href="#exam-edge" class="path-card path-exam" id="path-card-exam">
+              <div class="path-icon-container">🏆</div>
+              <div class="path-card-body">
+                <div class="path-badge">TEST READY</div>
+                <div class="path-title">Exam Edge</div>
+                <div class="path-desc">Challenge yourself with exam-style questions and advanced problems.</div>
+              </div>
+            </a>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         VIEW 2: Connectomics Page (/the-living-world/connectomics)
+         ======================================================================= -->
+    <section id="view-connectomics" class="view-section">
+      <div class="subpage-hero-banner">
+        <h1>The Living World <span class="highlight-text">Connectomics</span></h1>
+        <p>Discover the hidden threads linking The Living World to the entire world of biology.</p>
+      </div>
+
+      <!-- Connectomic Checkpoint -->
+      <div class="section-block">
+        <div class="section-heading-centered">
+          <h2>📋 Connectomic Checkpoint</h2>
+          <p>Every concept in this chapter rests on what you already know. Verify these before proceeding.</p>
+        </div>
+
+        <div class="checkpoint-card">
+          <div class="checkpoint-header">
+            <span>✅</span> You must be comfortable with:
+          </div>
+          <div class="checkpoint-grid">
+            <div class="checkpoint-item checked" data-prereq="1">
+              <span class="check-icon">✓</span> Basic diversity of organisms (Class IX–X)
+            </div>
+            <div class="checkpoint-item checked" data-prereq="2">
+              <span class="check-icon">✓</span> Scientific method & observation
+            </div>
+            <div class="checkpoint-item checked" data-prereq="3">
+              <span class="check-icon">✓</span> Cell as the basic unit of life (concept)
+            </div>
+            <div class="checkpoint-item checked" data-prereq="4">
+              <span class="check-icon">✓</span> Common vs scientific naming conventions
+            </div>
+          </div>
+        </div>
+
+        <!-- Chapter Link Callout -->
+        <div class="chapter-link-callout">
+          <span class="chapter-link-label">🔗 Chapter Link</span>
+          <span class="chapter-link-text">Biology Class XI - Chapter 1, NCERT 2026</span>
+        </div>
+      </div>
+
+      <!-- The Web of Biology -->
+      <div class="section-block">
+        <div class="section-heading-centered">
+          <h2>The Web of Biology</h2>
+          <p>How Chapter 1 connects directly and fundamentally with the rest of your NCERT syllabus.</p>
+        </div>
+
+        <div class="web-cards-grid">
+          <!-- Card 1 -->
+          <div class="web-card tag-direct">
+            <div class="web-card-top">
+              <span class="web-card-icon">🧬</span>
+              <span class="web-tag direct">Direct</span>
+            </div>
+            <div class="web-connection-title">
+              <span>The Living World (Ch.1)</span>
+              <span>→</span>
+              <span class="dest-ch">Biological Classification (Ch.2)</span>
+            </div>
+            <p class="web-card-desc">The taxonomic categories and hierarchy introduced here are applied directly to classify all five kingdoms.</p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="web-card tag-direct">
+            <div class="web-card-top">
+              <span class="web-card-icon">🌿</span>
+              <span class="web-tag direct">Direct</span>
+            </div>
+            <div class="web-connection-title">
+              <span>The Living World (Ch.1)</span>
+              <span>→</span>
+              <span class="dest-ch">Plant Kingdom (Ch.3)</span>
+            </div>
+            <p class="web-card-desc">Binomial nomenclature and taxonomic aids are used to identify and name every plant group studied.</p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="web-card tag-direct">
+            <div class="web-card-top">
+              <span class="web-card-icon">🐾</span>
+              <span class="web-tag direct">Direct</span>
+            </div>
+            <div class="web-connection-title">
+              <span>The Living World (Ch.1)</span>
+              <span>→</span>
+              <span class="dest-ch">Animal Kingdom (Ch.4)</span>
+            </div>
+            <p class="web-card-desc">The same classification hierarchy (species → kingdom) structures the animal chapter.</p>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="web-card tag-mirror">
+            <div class="web-card-top">
+              <span class="web-card-icon">🧪</span>
+              <span class="web-tag mirror">Mirror</span>
+            </div>
+            <div class="web-connection-title">
+              <span>The Living World (Ch.1)</span>
+              <span>→</span>
+              <span class="dest-ch">Morphology of Flowering Plants (Ch.5)</span>
+            </div>
+            <p class="web-card-desc">Herbaria and taxonomic keys introduced here are the tools used to identify flowering plant morphology.</p>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="web-card tag-longterm">
+            <div class="web-card-top">
+              <span class="web-card-icon">🧬</span>
+              <span class="web-tag long-term">Long-term</span>
+            </div>
+            <div class="web-connection-title">
+              <span>The Living World (Ch.1)</span>
+              <span>→</span>
+              <span class="dest-ch">Evolution (Class XII)</span>
+            </div>
+            <p class="web-card-desc">The species concept and taxonomic hierarchy form the basis for understanding evolutionary relationships.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Real World Applications -->
+      <div class="section-block">
+        <div class="section-heading-centered">
+          <h2>Real World Applications</h2>
+          <p>Why taxonomy, nomenclature, and biodiversity cataloging matter globally.</p>
+        </div>
+
+        <div class="real-world-grid">
+          <div class="impact-card">
+            <span class="impact-badge impact-essential">IMPACT: ESSENTIAL</span>
+            <h3 class="impact-title">Biodiversity Conservation</h3>
+            <p class="impact-desc">Taxonomy allows scientists to catalog and protect endangered species; the IUCN Red List depends on accurate species identification.</p>
+          </div>
+
+          <div class="impact-card">
+            <span class="impact-badge impact-high">IMPACT: HIGH</span>
+            <h3 class="impact-title">Agriculture & Pest Control</h3>
+            <p class="impact-desc">Correct identification of crop pests and their natural predators using taxonomic keys prevents misapplication of pesticides.</p>
+          </div>
+
+          <div class="impact-card">
+            <span class="impact-badge impact-essential">IMPACT: ESSENTIAL</span>
+            <h3 class="impact-title">Drug Discovery (Pharmacognosy)</h3>
+            <p class="impact-desc">New medicines are often derived from specific, correctly identified plant and microbial species — misidentification can be dangerous.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Infinite Connections -->
+      <div class="closing-statement-card">
+        <h3>Infinite Connections</h3>
+        <p>"The Living World isn't just a chapter; it's the starting point for how biologists organize, name, and study every organism on Earth."</p>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         VIEW 3: Introduction Page (/the-living-world/introduction)
+         ======================================================================= -->
+    <section id="view-introduction" class="view-section">
+      <div class="subpage-hero-banner">
+        <h1>Dive into <span class="highlight-text">The Living World</span></h1>
+        <p>Get started with the 6 big questions and check your prerequisites.</p>
+      </div>
+
+      <!-- Prerequisites -->
+      <div class="section-block">
+        <div class="section-heading-centered">
+          <h2>Prerequisites</h2>
+          <p>Foundations from previous grades that set you up for success in Class 11.</p>
+        </div>
+
+        <div class="prereq-grid">
+          <div class="prereq-card">
+            <div class="prereq-icon">🌍</div>
+            <div>
+              <div class="prereq-title">Biological Diversity</div>
+              <div class="prereq-desc">General awareness of the variety of organisms around us (Class IX–X).</div>
+            </div>
+          </div>
+
+          <div class="prereq-card">
+            <div class="prereq-icon">🔬</div>
+            <div>
+              <div class="prereq-title">Scientific Observation</div>
+              <div class="prereq-desc">Basic understanding of how scientists classify and study natural phenomena.</div>
+            </div>
+          </div>
+
+          <div class="prereq-card">
+            <div class="prereq-icon">📖</div>
+            <div>
+              <div class="prereq-title">Common Naming</div>
+              <div class="prereq-desc">Familiarity with everyday/common names of plants and animals, to contrast with scientific naming.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6 Big Questions (2x3 Grid matching photo) -->
+      <div class="section-block">
+        <h2 class="big-questions-title">6 Big Questions</h2>
+
+        <div class="big-questions-grid">
+          
+          <!-- Card 1: What -->
+          <div class="big-q-card open" onclick="toggleBigQCard(this)">
+            <div class="big-q-card-header">
+              <div class="big-q-icon-box icon-what">❓</div>
+              <div class="big-q-text-wrap">
+                <div class="big-q-heading q-color-what">What</div>
+                <div class="big-q-sub">is Life?</div>
+              </div>
+              <div class="big-q-arrow">▼</div>
+            </div>
+            <div class="big-q-content">
+              Life is a unique, complex cellular organization of molecules expressing itself through chemical reactions that lead to growth, development, responsiveness, adaptation, and reproduction. The <strong>defining characteristics</strong> of all living organisms are <em>Metabolism</em>, <em>Cellular Organization</em>, and <em>Consciousness</em>.
+            </div>
+          </div>
+
+          <!-- Card 2: Why -->
+          <div class="big-q-card" onclick="toggleBigQCard(this)">
+            <div class="big-q-card-header">
+              <div class="big-q-icon-box icon-why">💡</div>
+              <div class="big-q-text-wrap">
+                <div class="big-q-heading q-color-why">Why</div>
+                <div class="big-q-sub">do we classify organisms?</div>
+              </div>
+              <div class="big-q-arrow">▼</div>
+            </div>
+            <div class="big-q-content">
+              With 1.7–1.8 million known species (and millions undiscovered), classification enables universal scientific communication, prevents confusion caused by local vernacular names, and establishes evolutionary relationships.
+            </div>
+          </div>
+
+          <!-- Card 3: Who -->
+          <div class="big-q-card" onclick="toggleBigQCard(this)">
+            <div class="big-q-card-header">
+              <div class="big-q-icon-box icon-who">👤</div>
+              <div class="big-q-text-wrap">
+                <div class="big-q-heading q-color-who">Who</div>
+                <div class="big-q-sub">developed modern taxonomy?</div>
+              </div>
+              <div class="big-q-arrow">▼</div>
+            </div>
+            <div class="big-q-content">
+              <strong>Carolus Linnaeus (1707–1778)</strong>, the <em>Father of Modern Taxonomy</em>, established the standardized Binomial Nomenclature system published in his monumental works <em>Species Plantarum</em> (1753) and <em>Systema Naturae</em> (1758).
+            </div>
+          </div>
+
+          <!-- Card 4: Where -->
+          <div class="big-q-card" onclick="toggleBigQCard(this)">
+            <div class="big-q-card-header">
+              <div class="big-q-icon-box icon-where">📍</div>
+              <div class="big-q-text-wrap">
+                <div class="big-q-heading q-color-where">Where</div>
+                <div class="big-q-sub">is biodiversity concentrated?</div>
+              </div>
+              <div class="big-q-arrow">▼</div>
+            </div>
+            <div class="big-q-content">
+              Biodiversity peaks near the equator in tropical rainforests, coral reefs, and global biodiversity hotspots (such as the Western Ghats, Indo-Burma, and the Himalayas) where climate stability fosters extraordinary species richness.
+            </div>
+          </div>
+
+          <!-- Card 5: When -->
+          <div class="big-q-card" onclick="toggleBigQCard(this)">
+            <div class="big-q-card-header">
+              <div class="big-q-icon-box icon-when">⏰</div>
+              <div class="big-q-text-wrap">
+                <div class="big-q-heading q-color-when">When</div>
+                <div class="big-q-sub">did formal classification emerge?</div>
+              </div>
+              <div class="big-q-arrow">▼</div>
+            </div>
+            <div class="big-q-content">
+              Systematic classification began with Aristotle's early groupings, evolved into Linnaean artificial systems, advanced through Bentham & Hooker's natural systems, and culminates in modern phylogenetic and molecular taxonomy.
+            </div>
+          </div>
+
+          <!-- Card 6: How -->
+          <div class="big-q-card" onclick="toggleBigQCard(this)">
+            <div class="big-q-card-header">
+              <div class="big-q-icon-box icon-how">🔍</div>
+              <div class="big-q-text-wrap">
+                <div class="big-q-heading q-color-how">How</div>
+                <div class="big-q-sub">do we identify & name a species?</div>
+              </div>
+              <div class="big-q-arrow">▼</div>
+            </div>
+            <div class="big-q-content">
+              Biologists follow 4 cardinal steps: <strong>1. Characterisation</strong> (recording traits), <strong>2. Identification</strong> (matching known taxa via keys), <strong>3. Nomenclature</strong> (assigning binomial Latin names per ICBN/ICZN), and <strong>4. Classification</strong> (positioning in taxonomic hierarchy).
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- CTA Banner -->
+      <div class="cta-banner">
+        <div class="cta-text">
+          Ready to learn the language? Next up: Key terms and taxonomic categories.
+        </div>
+        <a href="#terminology" class="cta-btn">Terminology →</a>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         VIEW 4: Terminology Page (/the-living-world/terminology)
+         ======================================================================= -->
+    <section id="view-terminology" class="view-section">
+      <div class="subpage-hero-banner">
+        <h1>The Living World <span class="highlight-text">Lexicon</span></h1>
+        <p>Explore the global foundations with 7 key terms, 5 golden nomenclature rules, and quick recall quizzes.</p>
+      </div>
+
+      <!-- Terminology Subtabs -->
+      <div class="lexicon-subnav">
+        <button class="lexicon-tab-btn active" data-lexicon-pane="pane-keyterms">Key Terms</button>
+        <button class="lexicon-tab-btn" data-lexicon-pane="pane-goldenrules">5 Golden Rules</button>
+        <button class="lexicon-tab-btn" data-lexicon-pane="pane-quiztime">Quiz Time</button>
+      </div>
+
+      <!-- Sub-Pane 1: Key Terms Master-Detail -->
+      <div id="pane-keyterms" class="lexicon-pane active">
+        <div class="master-detail-grid">
+          
+          <!-- Left List of Terms -->
+          <div class="terms-list-column" id="terms-list-container">
+            <!-- Dynamically populated by app.js -->
+          </div>
+
+          <!-- Right Detail View -->
+          <div class="term-detail-card" id="term-detail-display">
+            <!-- Dynamically populated by app.js -->
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Sub-Pane 2: 5 Golden Rules -->
+      <div id="pane-goldenrules" class="lexicon-pane">
+        <div class="section-heading-centered">
+          <h2>The 5 Golden Rules of Binomial Nomenclature</h2>
+          <p>Universal principles formulated by Carolus Linnaeus and governed by ICBN / ICZN.</p>
+        </div>
+
+        <div class="golden-rules-grid">
+          <div class="rule-card">
+            <div class="rule-number">1</div>
+            <div class="rule-title">Two-Part Composition</div>
+            <div class="rule-desc">Each biological name consists of two parts: the first name represents the <strong>Generic name (Genus)</strong>, and the second represents the <strong>Specific epithet (Species)</strong>.</div>
+            <div class="rule-example">Mangifera (Genus) + indica (Species)</div>
+          </div>
+
+          <div class="rule-card">
+            <div class="rule-number">2</div>
+            <div class="rule-title">Latin Origin & Italics</div>
+            <div class="rule-desc">Biological names are generally Latin or Latinised irrespective of their origin. They are printed in <em>italics</em>, or underlined separately when handwritten.</div>
+            <div class="rule-example"><u>Mangifera</u> <u>indica</u> (when handwritten)</div>
+          </div>
+
+          <div class="rule-card">
+            <div class="rule-number">3</div>
+            <div class="rule-title">Capitalization Standard</div>
+            <div class="rule-desc">The Generic name starts with a <strong>Capital letter</strong>, while the specific epithet always starts with a <strong>small letter</strong>.</div>
+            <div class="rule-example">Correct: <em>Homo sapiens</em> | Incorrect: <em>Homo Sapiens</em></div>
+          </div>
+
+          <div class="rule-card">
+            <div class="rule-number">4</div>
+            <div class="rule-title">Author Citation</div>
+            <div class="rule-desc">The name of the author who first published the valid description appears in abbreviated Roman script at the very end of the binomial.</div>
+            <div class="rule-example"><em>Mangifera indica</em> Linn. (described by Linnaeus)</div>
+          </div>
+
+          <div class="rule-card">
+            <div class="rule-number">5</div>
+            <div class="rule-title">Governing Codes</div>
+            <div class="rule-desc">Plant names adhere to the <strong>ICBN</strong> (International Code of Botanical Nomenclature), and animal names adhere to the <strong>ICZN</strong> (International Code of Zoological Nomenclature). Tautonyms are valid in zoology but not in botany.</div>
+            <div class="rule-example">Animal tautonym: <em>Naja naja</em> (Indian cobra)</div>
+          </div>
+        </div>
+
+        <!-- Interactive Name Formatting Validator Game -->
+        <div class="validator-container">
+          <div class="validator-title">🎮 Test Your Eye: Spot the Correct Scientific Name</div>
+          <div class="validator-sub">Select the correctly formatted binomial name for Mango according to NCERT rules:</div>
+          <div class="validator-options-grid" id="validator-options">
+            <div class="validator-option" data-correct="false">mangifera Indica</div>
+            <div class="validator-option" data-correct="false">Mangifera Indica</div>
+            <div class="validator-option" data-correct="true">Mangifera indica</div>
+            <div class="validator-option" data-correct="false">MANGIFERA INDICA</div>
+          </div>
+          <div class="validator-feedback" id="validator-feedback"></div>
+        </div>
+      </div>
+
+      <!-- Sub-Pane 3: Quiz Time -->
+      <div id="pane-quiztime" class="lexicon-pane">
+        <div class="quiz-container" id="lexicon-quiz-container">
+          <div class="quiz-header-bar">
+            <div class="quiz-progress" id="quiz-progress-label">Question 1 of 5</div>
+            <div class="quiz-score-badge" id="quiz-score-display">Score: 0 / 0</div>
+          </div>
+          <div class="quiz-question-text" id="quiz-question-text">
+            Loading terminology question...
+          </div>
+          <div class="quiz-options-list" id="quiz-options-container">
+            <!-- Populated dynamically -->
+          </div>
+          <div class="quiz-explanation" id="quiz-explanation-box"></div>
+          <div class="quiz-actions">
+            <button class="cta-btn" id="btn-next-quiz-q" style="display: none;">Next Question →</button>
+            <button class="cta-btn" id="btn-restart-quiz" style="display: none; background: #64748b;">Restart Quiz</button>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- =======================================================================
+         VIEW 5: Skills Page (/the-living-world/skills)
+         ======================================================================= -->
+    <section id="view-skills" class="view-section">
+      <div class="subpage-hero-banner">
+        <h1>Core <span class="highlight-text">Skills</span></h1>
+        <p>Choose a skill below. Read the lesson, practice to build confidence, and take the assessment to earn your mastery!</p>
+      </div>
+
+      <div class="skills-grid">
+        
+        <!-- Skill 1 -->
+        <div class="skill-card" data-skill-id="1">
+          <div class="skill-status-badge" id="skill-badge-1">Not Started</div>
+          <div class="skill-card-top">
+            <div class="skill-icon">🏛️</div>
+            <div class="skill-title">Characteristics of Living Organisms</div>
+            <div class="skill-desc">Growth, reproduction, metabolism, cellular organization, and consciousness. Distinguish defining vs non-defining traits.</div>
+          </div>
+          <div class="skill-btn-group">
+            <button class="skill-btn btn-learn" onclick="openSkillModal(1, 'learn')">Learn</button>
+            <button class="skill-btn btn-practice" onclick="openSkillModal(1, 'practice')">Practice</button>
+            <button class="skill-btn btn-assess" onclick="openSkillModal(1, 'assess')">Assess</button>
+          </div>
+        </div>
+
+        <!-- Skill 2 -->
+        <div class="skill-card" data-skill-id="2">
+          <div class="skill-status-badge" id="skill-badge-2">Not Started</div>
+          <div class="skill-card-top">
+            <div class="skill-icon">🧬</div>
+            <div class="skill-title">Taxonomic Categories & Hierarchy</div>
+            <div class="skill-desc">Species → Genus → Family → Order → Class → Phylum/Division → Kingdom. Understand commonalities and specificity across ranks.</div>
+          </div>
+          <div class="skill-btn-group">
+            <button class="skill-btn btn-learn" onclick="openSkillModal(2, 'learn')">Learn</button>
+            <button class="skill-btn btn-practice" onclick="openSkillModal(2, 'practice')">Practice</button>
+            <button class="skill-btn btn-assess" onclick="openSkillModal(2, 'assess')">Assess</button>
+          </div>
+        </div>
+
+        <!-- Skill 3 -->
+        <div class="skill-card" data-skill-id="3">
+          <div class="skill-status-badge" id="skill-badge-3">Not Started</div>
+          <div class="skill-card-top">
+            <div class="skill-icon">✍️</div>
+            <div class="skill-title">Binomial Nomenclature Rules</div>
+            <div class="skill-desc">ICBN/ICZN naming conventions, Latinisation, italicization, author citations, and frequent NEET question traps.</div>
+          </div>
+          <div class="skill-btn-group">
+            <button class="skill-btn btn-learn" onclick="openSkillModal(3, 'learn')">Learn</button>
+            <button class="skill-btn btn-practice" onclick="openSkillModal(3, 'practice')">Practice</button>
+            <button class="skill-btn btn-assess" onclick="openSkillModal(3, 'assess')">Assess</button>
+          </div>
+        </div>
+
+        <!-- Skill 4 -->
+        <div class="skill-card" data-skill-id="4">
+          <div class="skill-status-badge" id="skill-badge-4">Not Started</div>
+          <div class="skill-card-top">
+            <div class="skill-icon">📚</div>
+            <div class="skill-title">Taxonomical Aids</div>
+            <div class="skill-desc">Herbarium, botanical gardens, museums, zoological parks, manual, monographs, and dichotomous taxonomic keys (couplet & lead).</div>
+          </div>
+          <div class="skill-btn-group">
+            <button class="skill-btn btn-learn" onclick="openSkillModal(4, 'learn')">Learn</button>
+            <button class="skill-btn btn-practice" onclick="openSkillModal(4, 'practice')">Practice</button>
+            <button class="skill-btn btn-assess" onclick="openSkillModal(4, 'assess')">Assess</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         VIEW 6: Exam Edge Page (/the-living-world/exam-edge)
+         ======================================================================= -->
+    <section id="view-exam-edge" class="view-section">
+      <div class="subpage-hero-banner">
+        <h1>The Living World <span class="highlight-text">Exam Edge</span></h1>
+        <p>Strategic insights, high-weightage tables, mnemonics, and previous year exam questions.</p>
+      </div>
+
+      <!-- NEET / Board Toggle -->
+      <div class="exam-toggle-container">
+        <div class="exam-toggle-pill">
+          <button class="toggle-option-btn active" id="toggle-neet" onclick="switchExamMode('neet')">NEET Exam Edge</button>
+          <button class="toggle-option-btn" id="toggle-boards" onclick="switchExamMode('boards')">Class 11 Board Exams</button>
+        </div>
+      </div>
+
+      <!-- Stats Bar -->
+      <div class="exam-stats-bar">
+        <div class="exam-stat-card">
+          <div class="val">2–4 Questions</div>
+          <div class="lbl">Exam Weightage</div>
+        </div>
+        <div class="exam-stat-card">
+          <div class="val">8–12 Marks</div>
+          <div class="lbl">Frequency Per Year</div>
+        </div>
+        <div class="exam-stat-card">
+          <div class="val">High Yield</div>
+          <div class="lbl">Concept Density</div>
+        </div>
+        <div class="exam-stat-card">
+          <div class="val">Easy - Medium</div>
+          <div class="lbl">Difficulty Index</div>
+        </div>
+      </div>
+
+      <!-- NCERT Taxonomic Category Comparison Table -->
+      <div class="section-block">
+        <div class="section-heading-centered">
+          <h2>NCERT Standard Classification Table</h2>
+          <p>Direct questions are asked from these 4 organisms almost every year in NEET.</p>
+        </div>
+
+        <div class="ncert-table-wrapper">
+          <table class="ncert-table">
+            <thead>
+              <tr>
+                <th>Common Name</th>
+                <th>Biological Name</th>
+                <th>Genus</th>
+                <th>Family</th>
+                <th>Order</th>
+                <th>Class</th>
+                <th>Phylum / Division</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Man</strong></td>
+                <td class="bio-name">Homo sapiens</td>
+                <td>Homo</td>
+                <td>Hominidae</td>
+                <td>Primata</td>
+                <td>Mammalia</td>
+                <td>Chordata</td>
+              </tr>
+              <tr>
+                <td><strong>Housefly</strong></td>
+                <td class="bio-name">Musca domestica</td>
+                <td>Musca</td>
+                <td>Muscidae</td>
+                <td>Diptera</td>
+                <td>Insecta</td>
+                <td>Arthropoda</td>
+              </tr>
+              <tr>
+                <td><strong>Mango</strong></td>
+                <td class="bio-name">Mangifera indica</td>
+                <td>Mangifera</td>
+                <td>Anacardiaceae</td>
+                <td>Sapindales</td>
+                <td>Dicotyledonae</td>
+                <td>Angiospermae</td>
+              </tr>
+              <tr>
+                <td><strong>Wheat</strong></td>
+                <td class="bio-name">Triticum aestivum</td>
+                <td>Triticum</td>
+                <td>Poaceae</td>
+                <td>Poales</td>
+                <td>Monocotyledonae</td>
+                <td>Angiospermae</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- High Yield Focus & Traps -->
+      <div class="section-block">
+        <div class="section-heading-centered">
+          <h2>High-Yield Traps & Memory Formulas</h2>
+          <p>Avoid common traps and memorize key rankings with standard mnemonics.</p>
+        </div>
+
+        <div class="high-yield-grid">
+          <div class="yield-card tip-card">
+            <div class="yield-title">
+              <span>🧠</span> Taxonomic Hierarchy Mnemonic
+            </div>
+            <div class="yield-desc">
+              From Highest to Lowest:<br>
+              <strong>K</strong>ingdom → <strong>P</strong>hylum (Division) → <strong>C</strong>lass → <strong>O</strong>rder → <strong>F</strong>amily → <strong>G</strong>enus → <strong>S</strong>pecies<br><br>
+              <em>"<strong>K</strong>ing <strong>P</strong>hilip <strong>C</strong>ame <strong>O</strong>ver <strong>F</strong>or <strong>G</strong>ood <strong>S</strong>oup"</em>
+            </div>
+          </div>
+
+          <div class="yield-card alert-card">
+            <div class="yield-title">
+              <span>⚠️</span> NEET Trap: Herbarium Label Info
+            </div>
+            <div class="yield-desc">
+              Herbarium labels contain: Date and place of collection, English, local and botanical names, family, and collector's name.<br><br>
+              <strong>TRAP:</strong> It does <em>NOT</em> carry information about plant height, weight, or medicinal uses!
+            </div>
+          </div>
+
+          <div class="yield-card alert-card">
+            <div class="yield-title">
+              <span>⚠️</span> Defining vs Non-Defining Traits
+            </div>
+            <div class="yield-desc">
+              • <strong>Defining Properties:</strong> Metabolism, Cellular Organization, Consciousness (Universal without exception).<br>
+              • <strong>Non-Defining:</strong> Growth (non-living things also grow by accretion) & Reproduction (mules, worker bees, sterile couples do not reproduce).
+            </div>
+          </div>
+
+          <div class="yield-card tip-card">
+            <div class="yield-title">
+              <span>🏛️</span> Key Botanical Repositories
+            </div>
+            <div class="yield-desc">
+              • <strong>Royal Botanic Gardens:</strong> Kew (England)<br>
+              • <strong>Indian Botanical Garden:</strong> Howrah, Kolkata (India)<br>
+              • <strong>National Botanical Research Institute (NBRI):</strong> Lucknow (India)
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- NEET PYQ Simulator -->
+      <div class="section-block">
+        <div class="section-heading-centered">
+          <h2>NEET Previous Year Question Simulator</h2>
+          <p>Solve high-frequency questions selected from previous NEET examinations.</p>
+        </div>
+
+        <div class="quiz-container" id="exam-pyq-container">
+          <div class="quiz-header-bar">
+            <div class="quiz-progress" id="pyq-progress-label">NEET PYQ 1 of 4</div>
+            <div class="quiz-score-badge" id="pyq-badge">High Probability</div>
+          </div>
+          <div class="quiz-question-text" id="pyq-question-text">
+            Which one of the following belongs to the family Muscidae?
+          </div>
+          <div class="quiz-options-list" id="pyq-options-container">
+            <!-- Populated dynamically -->
+          </div>
+          <div class="quiz-explanation" id="pyq-explanation-box"></div>
+          <div class="quiz-actions">
+            <button class="cta-btn" id="btn-next-pyq" style="display: none;">Next PYQ →</button>
+            <button class="cta-btn" id="btn-restart-pyq" style="display: none; background: #64748b;">Restart PYQ Set</button>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- =========================================================================
+       Skills Interactive Modal (Learn, Practice, Assess)
+       ========================================================================= -->
+  <div class="modal-backdrop" id="skill-modal-backdrop">
+    <div class="modal-container">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <span class="modal-icon" id="modal-skill-icon">🏛️</span>
+          <h2 class="modal-title" id="modal-skill-title">Skill Workspace</h2>
+        </div>
+        <button class="modal-close-btn" onclick="closeSkillModal()">✕</button>
+      </div>
+
+      <div class="modal-tabs">
+        <button class="modal-tab-btn" id="mtab-learn" onclick="switchModalTab('learn')">📖 Learn</button>
+        <button class="modal-tab-btn" id="mtab-practice" onclick="switchModalTab('practice')">✍️ Practice</button>
+        <button class="modal-tab-btn" id="mtab-assess" onclick="switchModalTab('assess')">🏆 Assess & Master</button>
+      </div>
+
+      <div class="modal-body" id="modal-skill-content">
+        <!-- Content rendered dynamically by app.js based on selected skill & tab -->
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       Global Footer
+       ========================================================================= -->
+  <footer class="global-footer">
+    © 2026 skill100.ai. All rights reserved.
+  </footer>
+
+  <!-- Application Logic -->
+  <script src="app.js"></script>
+</body>
+</html>

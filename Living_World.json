@@ -1,0 +1,316 @@
+{
+  "subject": "Biology",
+  "chapter": "The Living World",
+  "description": "Introduction to biodiversity, taxonomy, nomenclature, and classification of organisms.",
+  
+  "learn": [
+    {
+      "id": 1,
+      "title": "What is Diversity in the Living World?",
+      "content": "Millions of plants and animals exist on Earth. This variety is called biodiversity."
+    },
+    {
+      "id": 2,
+      "title": "What is Nomenclature?",
+      "content": "Nomenclature is the process of assigning scientific names to organisms."
+    },
+    {
+      "id": 3,
+      "title": "What is Binomial Nomenclature?",
+      "content": "Each organism has two names: Genus and Species. Example: Mangifera indica."
+    },
+    {
+      "id": 4,
+      "title": "What is Taxonomy?",
+      "content": "Taxonomy is the science of identification, classification, and nomenclature."
+    },
+    {
+      "id": 5,
+      "title": "Taxonomic Hierarchy",
+      "content": "Species → Genus → Family → Order → Class → Phylum/Division → Kingdom"
+    }
+  ],
+
+  "practice": [
+  {
+    "question": "What is biodiversity?",
+    "options": [
+      "The number and variety of organisms present on Earth",
+      "The study of cells",
+      "The process of naming organisms",
+      "The study of ecosystems only"
+    ],
+    "correct_answer": "The number and variety of organisms present on Earth",
+    "explanation": "Biodiversity refers to the variety and number of different organisms present on Earth."
+  },
+  {
+    "question": "Why is there a need for standardised naming of organisms?",
+    "options": [
+      "To make organisms larger",
+      "To ensure an organism has the same name worldwide",
+      "To change local names",
+      "To identify habitats"
+    ],
+    "correct_answer": "To ensure an organism has the same name worldwide",
+    "explanation": "Standardised scientific names allow people around the world to refer to the same organism by the same name."
+  },
+  {
+    "question": "What is nomenclature?",
+    "options": [
+      "Grouping organisms",
+      "Naming organisms",
+      "Studying evolution",
+      "Finding habitats"
+    ],
+    "correct_answer": "Naming organisms",
+    "explanation": "Nomenclature is the process of assigning scientific names to organisms."
+  },
+  {
+    "question": "What is identification?",
+    "options": [
+      "Giving an organism a local name",
+      "Determining the organism to which a name is attached",
+      "Grouping organisms into kingdoms",
+      "Studying only plants"
+    ],
+    "correct_answer": "Determining the organism to which a name is attached",
+    "explanation": "Identification involves correctly describing an organism and determining the organism to which the name belongs."
+  },
+  {
+    "question": "Who introduced the binomial system of nomenclature?",
+    "options": [
+      "Charles Darwin",
+      "Carolus Linnaeus",
+      "Gregor Mendel",
+      "Robert Hooke"
+    ],
+    "correct_answer": "Carolus Linnaeus",
+    "explanation": "The binomial system of nomenclature was given by Carolus Linnaeus."
+  },
+  {
+    "question": "How many components are present in a binomial name?",
+    "options": [
+      "One",
+      "Two",
+      "Three",
+      "Four"
+    ],
+    "correct_answer": "Two",
+    "explanation": "A binomial name has two components: the generic name and the specific epithet."
+  },
+  {
+    "question": "In Mangifera indica, what does Mangifera represent?",
+    "options": [
+      "Species",
+      "Family",
+      "Genus",
+      "Order"
+    ],
+    "correct_answer": "Genus",
+    "explanation": "Mangifera is the genus, while indica is the specific epithet."
+  },
+  {
+    "question": "In Mangifera indica, what does indica represent?",
+    "options": [
+      "Genus",
+      "Specific epithet",
+      "Family",
+      "Kingdom"
+    ],
+    "correct_answer": "Specific epithet",
+    "explanation": "Indica is the specific epithet in the binomial name Mangifera indica."
+  },
+  {
+    "question": "Which is the correctly written scientific name?",
+    "options": [
+      "Mangifera Indica",
+      "mangifera indica",
+      "Mangifera indica",
+      "MANGIFERA INDICA"
+    ],
+    "correct_answer": "Mangifera indica",
+    "explanation": "The genus begins with a capital letter and the specific epithet begins with a small letter."
+  },
+  {
+    "question": "How are biological names generally written?",
+    "options": [
+      "In Latin and italics",
+      "Only in English",
+      "Only in capital letters",
+      "Only in small letters"
+    ],
+    "correct_answer": "In Latin and italics",
+    "explanation": "Biological names are generally Latinised and printed in italics."
+  },
+  {
+    "question": "What is classification?",
+    "options": [
+      "Naming organisms",
+      "Grouping organisms into convenient categories",
+      "Finding organisms",
+      "Studying cells"
+    ],
+    "correct_answer": "Grouping organisms into convenient categories",
+    "explanation": "Classification groups organisms into convenient categories based on observable characters."
+  },
+  {
+    "question": "What is taxonomy?",
+    "options": [
+      "Only naming organisms",
+      "Only studying habitats",
+      "Identification, classification and nomenclature of organisms",
+      "Only studying cells"
+    ],
+    "correct_answer": "Identification, classification and nomenclature of organisms",
+    "explanation": "Characterisation, identification, classification and nomenclature form the basic processes of taxonomy."
+  },
+  {
+    "question": "What does systematics take into account?",
+    "options": [
+      "Only colour",
+      "Only habitat",
+      "Evolutionary relationships between organisms",
+      "Only size"
+    ],
+    "correct_answer": "Evolutionary relationships between organisms",
+    "explanation": "Systematics includes identification, nomenclature and classification and takes evolutionary relationships into account."
+  },
+  {
+    "question": "What is a taxon?",
+    "options": [
+      "A unit or category of classification",
+      "A type of cell",
+      "A scientific instrument",
+      "A habitat"
+    ],
+    "correct_answer": "A unit or category of classification",
+    "explanation": "A taxon is a unit of classification at a particular rank."
+  },
+  {
+    "question": "Which is the lowest category in the taxonomic hierarchy?",
+    "options": [
+      "Kingdom",
+      "Class",
+      "Genus",
+      "Species"
+    ],
+    "correct_answer": "Species",
+    "explanation": "Species is the lowest category in the taxonomic hierarchy described in the chapter."
+  },
+  {
+    "question": "Which is the highest category among the main taxonomic categories discussed?",
+    "options": [
+      "Species",
+      "Family",
+      "Kingdom",
+      "Genus"
+    ],
+    "correct_answer": "Kingdom",
+    "explanation": "Kingdom is the highest category among the main hierarchy from species to kingdom."
+  },
+  {
+    "question": "Which sequence shows the taxonomic hierarchy from lower to higher category?",
+    "options": [
+      "Species → Genus → Family → Order → Class → Phylum → Kingdom",
+      "Kingdom → Species → Genus → Family → Order",
+      "Genus → Species → Kingdom → Family",
+      "Family → Species → Genus → Kingdom"
+    ],
+    "correct_answer": "Species → Genus → Family → Order → Class → Phylum → Kingdom",
+    "explanation": "The hierarchy proceeds upward from species through genus, family, order, class, phylum/division and kingdom."
+  },
+  {
+    "question": "A genus comprises:",
+    "options": [
+      "Related species",
+      "Related kingdoms",
+      "Only one organism",
+      "Different phyla"
+    ],
+    "correct_answer": "Related species",
+    "explanation": "A genus comprises a group of related species having more characters in common compared with species of other genera."
+  },
+  {
+    "question": "A family consists of:",
+    "options": [
+      "Related genera",
+      "Related kingdoms",
+      "Only one species",
+      "Different classes"
+    ],
+    "correct_answer": "Related genera",
+    "explanation": "Family is a category containing a group of related genera."
+  },
+  {
+    "question": "Which two genera are examples of genera placed in the family Solanaceae?",
+    "options": [
+      "Solanum and Petunia",
+      "Panthera and Felis",
+      "Homo and Musca",
+      "Mangifera and Triticum"
+    ],
+    "correct_answer": "Solanum and Petunia",
+    "explanation": "The chapter gives Solanum, Petunia and Datura as genera placed in the family Solanaceae."
+  },
+  {
+    "question": "Which family includes the genera Panthera and Felis?",
+    "options": [
+      "Canidae",
+      "Felidae",
+      "Solanaceae",
+      "Poaceae"
+    ],
+    "correct_answer": "Felidae",
+    "explanation": "Panthera and Felis are placed in the family Felidae."
+  },
+  {
+    "question": "Which genus includes lion, tiger and leopard?",
+    "options": [
+      "Felis",
+      "Panthera",
+      "Homo",
+      "Solanum"
+    ],
+    "correct_answer": "Panthera",
+    "explanation": "Lion, tiger and leopard are species belonging to the genus Panthera."
+  },
+  {
+    "question": "What is the scientific name of human beings given in the chapter?",
+    "options": [
+      "Homo sapiens",
+      "Panthera leo",
+      "Mangifera indica",
+      "Musca domestica"
+    ],
+    "correct_answer": "Homo sapiens",
+    "explanation": "Human beings belong to the species sapiens and genus Homo."
+  },
+  {
+    "question": "What is the scientific name of mango?",
+    "options": [
+      "Mangifera indica",
+      "Solanum tuberosum",
+      "Homo sapiens",
+      "Triticum aestivum"
+    ],
+    "correct_answer": "Mangifera indica",
+    "explanation": "The scientific name of mango given in the chapter is Mangifera indica."
+  },
+  {
+    "question": "What is the scientific name of wheat given in the table?",
+    "options": [
+      "Triticum aestivum",
+      "Mangifera indica",
+      "Musca domestica",
+      "Homo sapiens"
+    ],
+    "correct_answer": "Triticum aestivum",
+    "explanation": "The chapter's taxonomic table gives Triticum aestivum as the biological name of wheat."
+  }
+],
+
+  "assessment": {
+    "total_questions": 3,
+    "passing_marks": 2
+  }
+}

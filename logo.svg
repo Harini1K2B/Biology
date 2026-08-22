@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 60" width="200" height="46" fill="none">
+  <!-- Orbit Icon -->
+  <g transform="translate(4, 2)">
+    <!-- Outer Orbit Ring Upper (Green) -->
+    <path d="M 28 6 C 42 6 52 16 52 28 C 52 32 50 36 47 40" stroke="#70b33f" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <!-- Outer Orbit Ring Lower (Blue) -->
+    <path d="M 28 50 C 14 50 4 40 4 28 C 4 24 6 20 9 16" stroke="#258be8" stroke-width="3" stroke-linecap="round" fill="none"/>
+    
+    <!-- Swooshing ellipse rings -->
+    <ellipse cx="28" cy="28" rx="24" ry="10" transform="rotate(-30 28 28)" stroke="#70b33f" stroke-width="1.5" stroke-dasharray="80 20" fill="none" opacity="0.85"/>
+    <ellipse cx="28" cy="28" rx="24" ry="10" transform="rotate(-30 28 28)" stroke="#258be8" stroke-width="1.5" stroke-dasharray="20 80" stroke-dashoffset="40" fill="none" opacity="0.85"/>
+    
+    <!-- Inner pill with LEARNERS text -->
+    <rect x="10" y="21" width="36" height="14" rx="7" fill="#ffffff" stroke="#258be8" stroke-width="1.2"/>
+    <text x="28" y="31.5" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="6.5" font-weight="800" fill="#258be8" text-anchor="middle" letter-spacing="0.4">LEARNERS</text>
+  </g>
+
+  <!-- Text "skill100.ai" -->
+  <g transform="translate(68, 38)">
+    <!-- skill100 in teal -->
+    <text x="0" y="0" font-family="'Plus Jakarta Sans', -apple-system, sans-serif" font-size="33" font-weight="900" fill="#00bca8" letter-spacing="-1.2">skill100</text>
+    <!-- .ai in lime-green -->
+    <text x="122" y="0" font-family="'Plus Jakarta Sans', -apple-system, sans-serif" font-size="33" font-weight="900" fill="#8dc63f" letter-spacing="-1">.ai</text>
+  </g>
+</svg>
